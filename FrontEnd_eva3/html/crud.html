@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo_crud.css">
+    <link rel="icon" type="image/png" href="../imagenes/logo_resinoxy.png">
+</head>
+<body>
+    <header class="menu">
+        <a href="../index.html">
+            <img src="../imagenes/logo_resinoxy.png" alt="" class="logo">
+        </a>
+
+        <p>Administración</p>
+    </header>
+
+    <div class="wave" id="wave1">
+        <div style="height: 100px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff80;"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="wave">
+        <div style="height: 100px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #ffff80;"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <div class="contenedor">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Nombre Producto</label>
+                            <label class="validation-error-hide" id="nombreCompletoValidationError"></label>
+                            <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Este campo es obligatorio.">
+                        </div>
+                        <div>
+                            <label>Número Producto</label>
+                            <input type="number" name="numeroProducto" id="numeroProducto">
+                        </div>
+                        <div>
+                            <label>Precio</label>
+                            <input type="text" name="precio" id="precio">
+                        </div>
+                        <div>
+                            <label>Stock</label>
+                            <input type="number" name="stock" id="stock">
+                        </div>
+                        <div class="form-action-button">
+                            <input type="submit" value="Ingresar">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="productoList">
+                        <thead>
+                            <tr>
+                                <th>Nombre Producto</th>
+                                <th>Numero Producto</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>   
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="wave">
+        <div style="height: 100px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff80;"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="wave">
+        <div style="height: 100px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #ffff80;"></path>
+            </svg>
+        </div>
+    </div>
+    <script src="../js/crud.js"></script>
+
+</body>
+</html>
